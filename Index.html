@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakamin HomeWork Week 5 - Javascript Basic</title>
+  </head>
+  <body>
+    <!--Form Registrasi-->
+    <div class="container">
+      <div class="registrasi" id="tab_registrasi">Registrasi</div>
+
+      <!--Form untuk nama-->
+      <label for="nama">Nama</label>
+      <form action="nama">
+        <input
+          type="text"
+          id="nama"
+          placeholder="Masukan Nama"
+          minlength="10"
+          required
+        />
+      </form>
+
+      <!--Form untuk usia-->
+      <label for="usia">Usia</label>
+      <form action="usia">
+        <input
+          type="text"
+          id="usia"
+          placeholder="Masukan Usia"
+          min="25"
+          required
+        />
+      </form>
+
+      <!--Form untuk uang sangu-->
+      <label for="uang">Uang Sangu</label>
+      <form action="uang">
+        <input
+          type="text"
+          id="uang"
+          placeholder="Masukan Jumlah Uang Sangu"
+          min="100.000"
+          max="1.000.000"
+          required
+        />
+      </form>
+
+      <!--Button Submit-->
+      <div class="submit">
+        <button onclick="getDataInput()">Registrasi</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Usia</th>
+              <th>Uang Saku</th>
+            </tr>
+            <tr>
+              <td id="data_registrasi"></td>
+            </tr>
+            <tr>
+              <th>Rata-Rata</th>
+            </tr>
+            <tr>
+              <td id="rata_rata"></td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+    <!--Javascript-->
+    <script src="app.js"></script>
+  </body>
+</html>
